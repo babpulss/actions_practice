@@ -4,12 +4,12 @@ on:
 
 jobs:
   checkout-yo:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - run: ls -la
       - run: echo 'Hello, github actions'
   echo-yo:
-      runs-on: ubuntu-lastest
+      runs-on: ubuntu-latest
       steps:
       - name: print echo
         run: echo 'run on echo-yo'
