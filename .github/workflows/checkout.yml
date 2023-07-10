@@ -1,5 +1,6 @@
 name: checkout workflow
-on: workflow-dispatch
+on: 
+  workflow-dispatch:
 jobs:
   checkout-yo:
     runs-on: ubuntu-lastest
@@ -8,7 +9,7 @@ jobs:
       - run: echo 'Hello, github actions'
   echo-yo:
       runs-on: ubuntu-lastest
-      setps:
+      steps:
       - name: print echo
         run: echo 'run on echo-yo'
       - name: print working directory
