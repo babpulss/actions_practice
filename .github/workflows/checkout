@@ -1,0 +1,15 @@
+name: checkout workflow
+on: workflow-dispatch
+jobs:
+  checkout-yo:
+    runs-on: ubuntu-lastest
+    steps:
+      - run: ls -la
+      - run: echo 'Hello, github actions'
+  echo-yo:
+      runs-on: ubuntu-lastest
+      setps:
+      - name: print echo
+        run: echo 'run on echo-yo'
+      - name: print working directory
+        run: pwd
