@@ -8,6 +8,8 @@ jobs:
     steps:
       - run: ls -la
       - uses: actions/checkout@v3
+      - run: ls -al
+      - run: cat .github/workflows/checkout.yml
   echo-yo:
       runs-on: ubuntu-latest
       steps:
